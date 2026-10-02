@@ -1,0 +1,30 @@
+{
+  "protocol": {
+    "protocol_version": "1.0.0",
+    "split_seed": 42,
+    "train_samples": 10000,
+    "test_samples": 2000,
+    "evaluation_seeds": [
+      42,
+      100,
+      2026,
+      3141,
+      404
+    ],
+    "input_dim": 392,
+    "latent_dim": 64,
+    "batch_size": 128,
+    "epochs": 5,
+    "lr": 0.001,
+    "target_ema_beta": 0.99
+  },
+  "splits": {
+    "train_indices_file": "/data/splits/train_indices.json",
+    "train_samples_count": 10000,
+    "train_sha256_short": "7d99a727ec84",
+    "test_indices_file": "data/splits/test_indices.json",
+    "test_samples_count": 2000,
+    "test_sha256_short": "edd6c0024ff4"
+  },
+  "status": "VERIFIED_FROZEN"
+}
