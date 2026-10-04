@@ -296,11 +296,11 @@ For every seed and aggregate run, retain structured artifacts:
    * `outputs/svd_variance_spectrum.csv`: explained variance mean and standard deviation across SVD ranks.
 
 3. **Publication Figures** (`outputs/plots/`):
-   * `1_effect_size_comparison.png`: Target Feature Effect vs. Matched Control across interventions (Mean ± SD).
-   * `2_causal_delta.png`: Net Causal Delta annotated with relative degradation percentage above baseline MSE.
-   * `3_variance_vs_causal_necessity.png`: Dual-panel contrast of representation variance versus causal necessity (Rank 1 vs. Ranks 2–5).
-   * `4_causal_decay_spectrum.png`: Multi-rank causal decay curves across all 4 interventions with error bands.
-   * `5_mechanism_disentanglement.png`: Disentanglement of global scaling (Ablation/Amplification) vs. instance-level variation (Swapping/Clamping).
+   * `1_variance_vs_causal_delta.png`: Combined representation variance and causal effect, showing how explained variance relates to causal necessity across SVD ranks.
+   * `2_causal_delta_across_ranks.png`: Causal Delta across explicit SVD ranks, showing the decay of causal effects across the latent representation.
+   * `3_seed_stability.png`: Seed-level stability of the Rank-1 ablation effect, showing whether the observed causal effect is consistent across random initializations.
+   * `4_svd_vs_random_control.png`: Comparison of SVD-direction effects against matched random-control effects across ranks.
+   * `5_causal_effect_distribution.png`: Distribution of seed-level causal effects, emphasizing robustness of the causal intervention results across experimental initializations.
 
 4. **Execution Log**:
    * `outputs/experiment.log`: comprehensive timestamped execution log.
