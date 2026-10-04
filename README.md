@@ -37,8 +37,8 @@ Target  (right 392px) → Target Encoder (EMA) ───────────
 git clone https://github.com/NeuralAlchemist-ai/JEPA-interpretability-experiment.git
 cd JEPA-interpretability-experiment
 uv sync
-uv run python run_experiment.py                              # full 5-seed run
-uv run python run_experiment.py --seeds 42 --epochs 5 --top-k 3  # fast single-seed
+uv run python run.py                              # full 5-seed run
+uv run python run.py --seeds 42 --epochs 5 --top-k 3  # fast single-seed
 ```
 
 ### CLI Reference
@@ -62,8 +62,6 @@ uv run python run_experiment.py --seeds 42 --epochs 5 --top-k 3  # fast single-s
 - **Train split**: 10,000 samples · `data/splits/train_indices.json` (seed 42)
 - **Test split**: 2,000 samples · `data/splits/test_indices.json` (seed 42)
 - **Zero leakage**: train/test index pools are strictly disjoint
-
-Re-generate splits: `uv run python generate_splits.py`
 
 ---
 
