@@ -2,6 +2,8 @@
 
 > **Note on Protocol Deviation:** The visualization pipeline was updated to better capture seed-level stability, SVD-specific controls, and distribution traits discovered during implementation.
 
+> **Note on Protocol Execution:** The experiment can be run using `python run.py`.
+
 ### Figure Mapping & Justification
 
 | Frozen Protocol Target (`outputs/plots/`) | Current Implementation (`outputs/plots/`) | Conceptual Shift / Scientific Justification |

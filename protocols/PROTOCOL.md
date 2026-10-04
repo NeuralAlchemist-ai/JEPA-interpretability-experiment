@@ -327,13 +327,13 @@ Any change to split indices, model dimensions, intervention definitions, or deci
 The complete experiment is executable from a clean environment using one documented command:
 
 ```bash
-python run_experiment.py
+python run.py
 ```
 
 To explicitly specify the frozen parameters:
 
 ```bash
-python run_experiment.py \
+python run.py \
   --epochs 5 \
   --seeds 42 100 2026 3141 404 \
   --batch-size 128 \
